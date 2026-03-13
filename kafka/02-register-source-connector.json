@@ -1,0 +1,18 @@
+{
+  "connector.class": "org.neo4j.connectors.kafka.source.Neo4jConnector",
+  "key.converter": "io.confluent.connect.json.JsonSchemaConverter",
+  "key.converter.schemas.enable": true,
+  "key.converter.schema.registry.url": "http://schema-registry:8081",
+  "value.converter": "io.confluent.connect.json.JsonSchemaConverter",
+  "value.converter.schemas.enable": true,
+  "value.converter.schema.registry.url": "http://schema-registry:8081",
+  "neo4j.uri": "neo4j://neo4jsrc:7687",
+  "neo4j.authentication.type": "BASIC",
+  "neo4j.authentication.basic.username": "neo4j",
+  "neo4j.authentication.basic.password": "letmein!",
+  "neo4j.source-strategy": "CDC",
+  "neo4j.start-from": "NOW",
+  "neo4j.cdc.poll-interval": "1s",
+  "neo4j.cdc.poll-duration": "5s",
+  "neo4j.cdc.topic.demo.patterns": "(:Customer),(:Product),(:Customer)-[:PURCHASES]->(:Product)"
+}
