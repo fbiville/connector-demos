@@ -22,4 +22,4 @@ Required environment variables:
 mvn verify
 ```
 
-The test imports the sample data from [`src/test/resources/neo4j-admin`](/Users/fbiville/workspace/bnp-demos/spark/src/test/resources/neo4j-admin), creates a `comments` database, and writes CSV output under `gs://$GCS_BUCKET_NAME/demo/`.
+The test imports the sample data from `src/test/resources/neo4j-admin`, creates a `comments` database, and writes CSV output under `gs://$GCS_BUCKET_NAME/demo/`.
