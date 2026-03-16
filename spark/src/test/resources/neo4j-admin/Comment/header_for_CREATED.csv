@@ -1,0 +1,2 @@
+creation_date,:IGNORE,:IGNORE,:END_ID(Comment),:IGNORE,:IGNORE,:IGNORE,:IGNORE,:START_ID(Person),:IGNORE,:IGNORE,:IGNORE
+creationDate,deletionDate,explicitlyDeleted,id,locationIP,browserUsed,content,length,CreatorPersonId,LocationCountryId,ParentPostId,ParentCommentId

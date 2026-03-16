@@ -1,0 +1,2 @@
+:IGNORE,:IGNORE,:IGNORE,id:ID(Person),first_name,last_name,:IGNORE,:IGNORE,:IGNORE,:IGNORE,:IGNORE,:IGNORE,:IGNORE
+creationDate,deletionDate,explicitlyDeleted,id,firstName,lastName,gender,birthday,locationIP,browserUsed,LocationCityId,language,email
