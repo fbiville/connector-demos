@@ -12,6 +12,7 @@ services:
       NEO4J_AUTH: "neo4j/letmein!"
       NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
       NEO4J_server_memory_heap_max__size: "4G"
+      NEO4J_server_bolt_advertised__address: "localhost:7687"
     healthcheck:
       test: [ "CMD", "cypher-shell", "-u", "neo4j", "-p", "letmein!", "RETURN 1" ]
       start_period: 2m
@@ -32,6 +33,7 @@ services:
       NEO4J_AUTH: "neo4j/letmein!"
       NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
       NEO4J_server_memory_heap_max__size: "4G"
+      NEO4J_server_bolt_advertised__address: "localhost:17687"
     healthcheck:
       test: [ "CMD", "cypher-shell", "-u", "neo4j", "-p", "letmein!", "RETURN 1" ]
       start_period: 2m
